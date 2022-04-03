@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tyler Miles - Course Project</title>
+    <meta name="description" content="This webpage is for a product created before the internet">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./js/javascript.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  </head>
+  <body class="contactpage">
+    <main>
+      <header id="header"></header>
+      <div id="masthead-4" class="masthead">
+        <div class="masthead-overlay">
+          <h1>Contact Us</h1>
+        </div>
+      </div>
+      <!-- A section containing fake company hours and buy/sell form -->
+      <section class="section-three">
+        <div class="main-div">
+          <h2>Hours</h2>
+          <p>Monday - Friday: 9:00AM - 8:00PM<br>
+          Saturday & Sunday: 9:00AM - 4:00PM</p>
+          <h2>Phone</h2>
+          <p><a href="tel:+15555555555">(555) 555-5555</a></p>
+          <h2>Email</h2>
+          <p><a href="mailto:tylerstypewriters@gmail.com">tylerstypewriters@gmail.com</a></p>
+        </div>
+        <div class="alt-div">
+          <h2>Buy/Sell Form</h2>
+          <form action="index.html" method="post">
+            <!-- Transaction type -->
+            <p>Transaction type:</p>
+            <input type="radio" id="buy" name="transactiontype" value="buy" checked>
+            <label for="buy">Buy</label><br>
+            <input type="radio" id="sell" name="transactiontype" value="sell">
+            <label for="sell">Sell</label><br>
+
+            <!-- Item details -->
+            <p>Item details:</p>
+            <label for="manufacturer">Manufacturer:</label>
+            <input type="text" id="manufacturer" name="manufacturer" required><br>
+            <label for="address">Model:</label>
+            <input type="text" id="model" name="model" required><br>
+
+            <!-- User details -->
+            <p>Please enter your information:</p>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required><br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br>
+            <label for="unit">Unit #:</label>
+            <input type="text" id="unit" name="unit"><br>
+            <label for="name">Full name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="phone">Phone #:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <!-- Submit button -->
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </section>
+      <section>
+        <!-- Iframe for store location (currently set to the campus) -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11364.990418873891!2d-79.45858!3d44.5919609!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa3b52a47095fe704!2sLakehead%20University%20-%20Orillia%20Campus!5e0!3m2!1sen!2sca!4v1638313936734!5m2!1sen!2sca" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </section>
+      <footer id="footer"></footer>
+    </main>
+  </body>
+</html>

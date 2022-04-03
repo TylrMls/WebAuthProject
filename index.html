@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tyler Miles - Course Project</title>
+    <meta name="description" content="This webpage is for a product created before the internet">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./js/javascript.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  </head>
+  <body class="homepage">
+    <main>
+      <header id="header"></header>
+      <div id="masthead-1" class="masthead">
+        <div class="masthead-overlay">
+          <h1>Tyler's<br>Typewriters</h1>
+        </div>
+      </div>
+      <!-- Alternating text and image locations. Each text section talks about a different topic. -->
+      <section class="section-one">
+        <div class="main-div">
+          <h2>Our Brand</h2>
+          <p>Tyler's Typewriters is more than just a brand. It's a lifestyle. From standard typewriters, to portable noiseless typewriters, we have the typewriter for you.</p>
+          <a href="./about.html">
+            <div class="button">
+              <p>Learn More</p>
+            </div>
+          </a>
+        </div>
+        <img src="./images/img-1.jpg" alt="A typewriter.">
+      </section>
+      <section class="section-two">
+        <div class="main-div">
+          <h2>Our Products</h2>
+          <p>We have many typewriters to choose from. No matter what you need, we can satisfy your typewriter requirements.<br><br>You can view our gallery of typewriters using the image switcher on this page.</p>
+          <a href="./products.html">
+            <div class="button">
+              <p>View Products</p>
+            </div>
+          </a>
+        </div>
+        <!-- An image gallery created using two divs that act as buttons, an image, and some JavaScript. -->
+        <div class="img-switcher">
+          <img id="switcher" src="./images/img-switcher-1.jpg" alt="Another typewriter.">
+          <div class="prev-button" onclick="loadPreviousImage()">
+            <p>Previous</p>
+          </div>
+          <div class="next-button" onclick="loadNextImage()">
+            <p>Next</p>
+          </div>
+        </div>
+      </section>
+      <footer id="footer"></footer>
+    </main>
+  </body>
+</html>

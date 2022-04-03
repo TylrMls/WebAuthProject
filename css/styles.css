@@ -1,0 +1,309 @@
+body {
+  font-family: 'Special Elite', cursive;
+}
+
+.img-switcher img {
+  width: 100%;
+}
+
+.alt-div {
+  background-color: lightblue;
+}
+
+nav {
+  display: grid;
+}
+
+nav img {
+  height: 100%;
+}
+
+nav ul li {
+  display: inline-block;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #808080;
+}
+
+/* In order to set an image for each individual mastheads, their IDs are used. */
+#masthead-1 {
+  background-image: url("../images/masthead-1.jpg");
+}
+
+#masthead-2 {
+  background-image: url("../images/masthead-2.jpg");
+}
+
+#masthead-3 {
+  background-image: url("../images/masthead-3.jpg");
+}
+
+#masthead-4 {
+  background-image: url("../images/masthead-4.jpg");
+}
+
+.masthead {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}
+
+section div h2 {
+  font-size: 30px;
+}
+
+section div p {
+  font-size: 24px;
+}
+
+.section-three div img {
+  width: 100%;
+}
+
+footer {
+  margin-top: 20px;
+  background-color: #000;
+  color: #fff;
+  padding: 60px;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 0 20px 0 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.button:hover, .prev-button:hover, .next-button:hover {
+  background-color: darkgrey;
+}
+
+.prev-button {
+  display: inline-block;
+  left: 0px;
+  padding: 0 20px 0 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.next-button {
+  display: inline-block;
+  right: 0px;
+  float: right;
+  padding: 0 20px 0 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.bottom-section {
+  text-align: center;
+  background-color: lightblue;
+}
+
+.bottom-section > a {
+  margin: auto;
+}
+
+.bottom-section > p {
+  margin: auto auto 60px auto;
+}
+
+/* CSS for when the user is not on mobile */
+@media only screen and (min-width: 768px) {
+  .bottom-section {
+    padding: 120px;
+  }
+
+  nav img {
+    width: 75%;
+    grid-column-start: 1;
+    grid-column-end: 2
+  }
+
+  nav ul {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    margin: auto auto 80px auto;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .masthead {
+    height: 100vh;
+  }
+
+  .masthead-overlay {
+    padding: 100px 90px 100px 90px;
+    margin: auto 0 auto 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .masthead-overlay h1 {
+    margin: auto;
+  }
+
+  .section-one, .section-two {
+    margin-top: 60px;
+    display: flex;
+  }
+
+  .section-three {
+    display: flex;
+  }
+
+  .section-one .main-div {
+    order: 2;
+    padding: 120px;
+    width: 50%;
+    grid-column: 2/4;
+  }
+
+  .section-one img {
+    order: 1;
+    min-width: 50%;
+    width: 50%;
+    grid-column: 2/4;
+  }
+
+  .section-two .main-div {
+    order: 1;
+    padding: 120px;
+    width: 50%;
+    grid-column: 2/4;
+  }
+
+  .section-two > img {
+    order: 2;
+    min-width: 50%;
+    width: 50%;
+    grid-column: 2/4;
+  }
+
+  .section-three .main-div {
+    order: 1;
+    padding: 120px;
+    width: 50%;
+    grid-column: 2/4;
+  }
+
+  .section-three .alt-div {
+    order: 2;
+    padding: 120px;
+    width: 50%;
+    grid-column: 2/4;
+  }
+
+  .section-two .img-switcher {
+    order: 2;
+    min-width: 50%;
+    width: 50%;
+    grid-column: 2/4;
+  }
+}
+
+/* CSS for when the user is on mobile */
+@media only screen and (max-width: 768px) {
+  .bottom-section {
+    padding: 60px;
+  }
+
+  nav img {
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  nav ul {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    list-style-type: none;
+    margin: auto auto 60px auto;
+    padding: 0;
+  }
+
+  .masthead {
+    height: 75vh;
+  }
+
+  .masthead-overlay {
+    padding: 50px 45px 50px 45px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 15px;
+  }
+
+  .masthead-overlay h1 {
+    margin: auto;
+  }
+
+  .section-one, .section-two {
+    margin-top: 60px;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .section-three {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .section-one .main-div {
+    order: 2;
+    padding: 60px;
+  }
+
+  .section-one img {
+    order: 1;
+  }
+
+  .section-two .main-div {
+    order: 2;
+    padding: 60px;
+  }
+
+  .section-two .img-switcher {
+    order: 1;
+  }
+
+  .section-three .main-div {
+    order: 2;
+    padding: 60px;
+  }
+
+  .section-three .alt-div {
+    order: 1;
+    padding: 60px;
+  }
+
+  section div h2 {
+    font-size: 36px !important;
+  }
+
+  section div p {
+    font-size: 20px !important;
+  }
+
+  nav ul li {
+    font-size: 14px !important;
+  }
+}
